@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#07070f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#card)"/>
+  <!-- storefront mock -->
+  <rect x="60" y="50" width="680" height="400" rx="12" fill="#0d0d1a"/>
+  <rect x="60" y="50" width="680" height="60" rx="12" fill="url(#g)"/>
+  <rect x="100" y="80" width="120" height="10" rx="3" fill="#fff" opacity="0.7"/>
+  <rect x="600" y="80" width="100" height="10" rx="3" fill="#fff" opacity="0.5"/>
+  <!-- product cards -->
+  <g transform="translate(100, 140)">
+    <rect width="180" height="240" rx="10" fill="#13132a"/>
+    <rect x="20" y="20" width="140" height="120" rx="8" fill="url(#g)" opacity="0.4"/>
+    <rect x="20" y="160" width="100" height="10" rx="2" fill="#fff"/>
+    <rect x="20" y="180" width="60" height="8" rx="2" fill="#fff" opacity="0.5"/>
+    <rect x="20" y="200" width="80" height="22" rx="6" fill="url(#g)"/>
+  </g>
+  <g transform="translate(310, 140)">
+    <rect width="180" height="240" rx="10" fill="#13132a"/>
+    <rect x="20" y="20" width="140" height="120" rx="8" fill="#00d4ff" opacity="0.4"/>
+    <rect x="20" y="160" width="100" height="10" rx="2" fill="#fff"/>
+    <rect x="20" y="180" width="60" height="8" rx="2" fill="#fff" opacity="0.5"/>
+    <rect x="20" y="200" width="80" height="22" rx="6" fill="url(#g)"/>
+  </g>
+  <g transform="translate(520, 140)">
+    <rect width="180" height="240" rx="10" fill="#13132a"/>
+    <rect x="20" y="20" width="140" height="120" rx="8" fill="#a855f7" opacity="0.4"/>
+    <rect x="20" y="160" width="100" height="10" rx="2" fill="#fff"/>
+    <rect x="20" y="180" width="60" height="8" rx="2" fill="#fff" opacity="0.5"/>
+    <rect x="20" y="200" width="80" height="22" rx="6" fill="url(#g)"/>
+  </g>
+  <text x="400" y="430" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#ffffff">Lumen Storefront</text>
+</svg>

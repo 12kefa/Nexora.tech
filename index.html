@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== SEO ===== -->
+    <title> Nexora Tech</title>
+    <meta name="description" content="Kflay Tesfay — founder of Nexora Tech. Full Stack Web Developer, UI/UX Designer and Software Engineer turning ideas into powerful digital experiences.">
+    <meta name="keywords" content="Kflay Tesfay, Nexora Tech, full stack developer, web developer, UI/UX designer, software engineer, portfolio, Ethiopia developer">
+    <meta name="author" content="Kflay Tesfay">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nexoratech.com/">
+
+    <!-- ===== Open Graph ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nexoratech.com/">
+    <meta property="og:title" content=" Nexora Tech Portfolio">
+    <meta property="og:description" content="Full Stack Web Developer | UI/UX Designer | Software Engineer. Turning ideas into powerful digital experiences.">
+    <meta property="og:image" content="assets/profile-final.jpg">
+    <meta property="og:site_name" content="Nexora Tech">
+
+    <!-- ===== Twitter ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kflay Tesfay — Nexora Tech">
+    <meta name="twitter:description" content="Full Stack Web Developer | UI/UX Designer | Software Engineer.">
+    <meta name="twitter:image" content="assets/profile-final.jpg">
+
+    <!-- ===== Favicon ===== -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!-- ===== Fonts ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ===== Icons ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- ===== Styles ===== -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         LOADING SCREEN
+         ============================================================ -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">N<span>exora</span></div>
+            <div class="loader-bar"><div class="loader-bar-fill" id="loaderBar"></div></div>
+            <div class="loader-text" id="loaderText">Loading experience…</div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         CURSOR (custom cursor for desktop)
+         ============================================================ -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ============================================================
+         NAVIGATION
+         ============================================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-mark">N</span><span class="logo-text">exora<span class="logo-dot">.</span></span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home"        class="nav-link active">Home</a></li>
+                <li><a href="#about"       class="nav-link">About</a></li>
+                <li><a href="#skills"      class="nav-link">Skills</a></li>
+                <li><a href="#services"    class="nav-link">Services</a></li>
+                <li><a href="#portfolio"   class="nav-link">Portfolio</a></li>
+                <li><a href="#experience"  class="nav-link">Experience</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#pricing"     class="nav-link">Pricing</a></li>
+                <li><a href="#faq"         class="nav-link">FAQ</a></li>
+                <li><a href="#contact"     class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm nav-cta">Hire Me</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    <span>Available for new projects</span>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Kflay Tesfay</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typed-text" id="typed"></span><span class="cursor-blink">|</span>
+                </h2>
+                <p class="hero-tagline">Turning Ideas Into Powerful Digital Experiences</p>
+                <p class="hero-desc">
+                    Founder of Nexora Tech. Full Stack Web Developer, UI/UX Designer and Software
+                    Engineer crafting fast, accessible and beautiful products that move the needle.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <span>Let's Talk</span>
+                    </a>
+                    <a href="assets/resume.pdf" download class="btn btn-ghost">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Resume</span>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <span class="hero-socials-label">Follow me</span>
+                     <a href="https://instagram.com/nexora.tech19"  target="_blank" rel="noopener" aria-label="Instagram" class="social-link brand-instagram"><img src="assets/icons/social/instagram.png" alt="Instagram" loading="lazy"></a>
+                    <a href="https://tiktok.com/@nexora.tech17"   target="_blank" rel="noopener" aria-label="TikTok"   class="social-link brand-tiktok"><img src="assets/icons/social/tiktok.png" alt="TikTok" loading="lazy"></a>
+                    <a href="https://wa.me/251939589512"          target="_blank" rel="noopener" aria-label="WhatsApp" class="social-link brand-whatsapp"><img src="assets/icons/social/whatsapp.png" alt="WhatsApp" loading="lazy"></a>
+                    <a href="https://linkedin.com/in/kflay tesfay" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link brand-linkedin"><img src="assets/icons/social/linkedin.png" alt="LinkedIn" loading="lazy"></a>
+                    <a href="https://facebook.com/Nexora Tech19" target="_blank" rel="noopener" aria-label="Facebook" class="social-link brand-facebook"><img src="assets/icons/social/facebook.png" alt="Facebook" loading="lazy"></a>
+                    <a href="https://t.me/nexoratech19"           target="_blank" rel="noopener" aria-label="Telegram" class="social-link brand-telegram"><img src="assets/icons/social/telegram.png" alt="Telegram" loading="lazy"></a>
+                </div>
+            </div>
+            <div class="hero-image reveal">
+                <div class="hero-image-wrap">
+                    <div class="hero-image-glow"></div>
+                    <img src="assets/profile.jpg" alt="Kflay Tesfay" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');">
+                    <div class="floating-card card-1">
+                        <i class="fa-solid fa-code"></i>
+                        <div><strong>2+ Years</strong><span>Experience</span></div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fa-solid fa-rocket"></i>
+                        <div><strong>20+ Projects</strong><span>Delivered</span></div>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fa-solid fa-star"></i>
+                        <div><strong>4.8 Rating</strong><span>Client Reviews</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll">
+            <span></span>
+        </a>
+    </section>
+
+    <!-- ============================================================
+         ABOUT
+         ============================================================ -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Crafting Code With Purpose</h2>
+                <p class="section-sub">A passionate developer building products people love to use.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-image-frame">
+                        <img src="assets/profile.jpg" alt="About Kflay Tesfay" onerror="this.style.display='none';">
+                        <div class="about-image-pattern"></div>
+                    </div>
+                    <div class="about-info-card glass">
+                        <h3>Kflay Tesfay</h3>
+                        <p>Founder & Lead Engineer — Nexora Tech</p>
+                        <div class="about-info-meta">
+                            <span><i class="fa-solid fa-envelope"></i> tesfaykflay75@gmail.com</span>
+                            <span><i class="fa-solid fa-phone"></i>0939589512</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Ethiopia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content reveal">
+                    <h3>Hello! I'm Kflay, your next tech partner.</h3>
+                    <p>
+                        I help startups, agencies and growing businesses ship world-class digital
+                        products. From pixel-perfect interfaces to scalable backend systems,
+                        I bridge the gap between design and engineering.
+                    </p>
+                    <p>
+                        With <strong>2+ years of experience</strong> across the full stack, I have
+                        delivered 20+ projects for clients worldwide. My focus is on writing clean,
+                        maintainable code and crafting interfaces that feel effortless.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight glass">
+                            <i class="fa-solid fa-palette"></i>
+                            <h4>Design-First</h4>
+                            <p>Pixel-perfect, accessible UI/UX.</p>
+                        </div>
+                        <div class="highlight glass">
+                            <i class="fa-solid fa-server"></i>
+                            <h4>Scalable Backend</h4>
+                            <p>Robust APIs and databases.</p>
+                        </div>
+                        <div class="highlight glass">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <h4>Responsive</h4>
+                            <p>Looks great on every device.</p>
+                        </div>
+                        <div class="highlight glass">
+                            <i class="fa-solid fa-bolt"></i>
+                            <h4>Fast & SEO-Ready</h4>
+                            <p>Optimized for speed and ranking.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fa-regular fa-handshake"></i> Let's Work Together
+                        </a>
+                        <a href="assets/resume.pdf" download class="btn btn-outline">
+                            <i class="fa-solid fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS
+         ============================================================ -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">My Skills</span>
+                <h2 class="section-title">Tools & Technologies I Love</h2>
+                <p class="section-sub">Constantly learning, constantly shipping.</p>
+            </div>
+
+            <div class="skills-tabs reveal">
+                <button class="skill-tab active" data-tab="frontend"><i class="fa-solid fa-display"></i> Frontend</button>
+                <button class="skill-tab" data-tab="backend"><i class="fa-solid fa-server"></i> Backend</button>
+                <button class="skill-tab" data-tab="design"><i class="fa-solid fa-pen-ruler"></i> Design</button>
+                <button class="skill-tab" data-tab="tools"><i class="fa-solid fa-toolbox"></i> Tools</button>
+            </div>
+
+            <div class="skills-content">
+                <div class="skill-panel active" data-panel="frontend">
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-head"><span>HTML5 & CSS3</span><span>92%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-skill="92"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-head"><span>JavaScript (ES6+)</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-skill="90"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-head"><span>React / Next.js</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-skill="85"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-panel" data-panel="backend">
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-head"><span>PHP</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-skill="85"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-head"><span>Node.js / Express</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-skill="85"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-head"><span>MySQL / PostgreSQL</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-skill="85"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-head"><span>REST & GraphQL APIs</span><span>86%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-skill="86"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-panel" data-panel="design">
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-head"><span>Figma</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-skill="85"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-head"><span>Adobe XD</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-skill="85"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-head"><span>UI Design Systems</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-skill="80"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-panel" data-panel="tools">
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-head"><span>Git & GitHub</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-skill="85"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-head"><span>Docker</span><span>78%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" data-skill="78"></div></div>
+                </div>
+            </div>
+
+            <div class="tech-stack reveal">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span>
+                <span>PHP</span><span>Node.js</span>
+                <span>MySQL</span><span>Figma</span>
+                <span>Git</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         SERVICES
+         ============================================================ -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Services</span>
+                <h2 class="section-title">What I Can Do For You</h2>
+                <p class="section-sub">End-to-end software development, designed and built by me &mdash; one developer, full ownership, no middlemen.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card glass reveal">
+                    <div class="service-icon-img"><img src="assets/icons/services/ecommerce.png" alt="E-Commerce Apps & Websites" loading="lazy"></div>
+                    <h3>E-Commerce Apps &amp; Websites</h3>
+                    <p>Online stores with payment gateways, inventory and order management, built to convert.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Custom storefronts</li>
+                        <li><i class="fa-solid fa-check"></i> Payment integration</li>
+                        <li><i class="fa-solid fa-check"></i> Inventory &amp; orders</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass reveal">
+                    <div class="service-icon-img"><img src="assets/icons/services/website.png" alt="Company Website" loading="lazy"></div>
+                    <h3>Company Website</h3>
+                    <p>Fast, professional websites that represent your brand and convert visitors into clients.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Responsive design</li>
+                        <li><i class="fa-solid fa-check"></i> SEO-ready structure</li>
+                        <li><i class="fa-solid fa-check"></i> Content management</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass reveal">
+                    <div class="service-icon-img"><img src="assets/icons/services/management.png" alt="Management Systems" loading="lazy"></div>
+                    <h3>Management Systems</h3>
+                    <p>Custom dashboards and internal tools to manage operations, staff, and data in one place.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Admin dashboards</li>
+                        <li><i class="fa-solid fa-check"></i> Role-based access</li>
+                        <li><i class="fa-solid fa-check"></i> Reporting &amp; analytics</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass reveal">
+                    <div class="service-icon-img"><img src="assets/icons/services/erp.png" alt="ERP Systems" loading="lazy"></div>
+                    <h3>ERP Systems</h3>
+                    <p>Integrated systems that connect finance, inventory, HR and operations into one workflow.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Process automation</li>
+                        <li><i class="fa-solid fa-check"></i> Module integration</li>
+                        <li><i class="fa-solid fa-check"></i> Scalable architecture</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass reveal">
+                    <div class="service-icon-img"><img src="assets/icons/services/uiux.png" alt="UI/UX Design" loading="lazy"></div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design that balances beauty, clarity and conversion for every screen.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Wireframes &amp; prototypes</li>
+                        <li><i class="fa-solid fa-check"></i> Design systems</li>
+                        <li><i class="fa-solid fa-check"></i> Brand identity</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass reveal">
+                    <div class="service-icon-img"><img src="assets/icons/services/custom-software.png" alt="Custom Software Solutions" loading="lazy"></div>
+                    <h3>Custom Software Solutions</h3>
+                    <p>Bespoke software engineered around your exact workflow when off-the-shelf isn't enough.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Tailored architecture</li>
+                        <li><i class="fa-solid fa-check"></i> API integrations</li>
+                        <li><i class="fa-solid fa-check"></i> Ongoing support</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass reveal">
+                    <div class="service-icon-img"><img src="assets/icons/services/mobile-apps.png" alt="Mobile Apps" loading="lazy"></div>
+                    <h3>Mobile Apps (Android &amp; iOS)</h3>
+                    <p>Cross-platform mobile apps that feel native, perform fast, and ship to both app stores.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Android &amp; iOS</li>
+                        <li><i class="fa-solid fa-check"></i> Offline-ready &amp; push notifications</li>
+                        <li><i class="fa-solid fa-check"></i> App store deployment</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass reveal">
+                    <div class="service-icon-img"><img src="assets/icons/services/cloud-hosting.png" alt="Cloud & Hosting Services" loading="lazy"></div>
+                    <h3>Cloud &amp; Hosting Services</h3>
+                    <p>Reliable deployment, hosting and infrastructure so your product stays fast and online.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Server setup &amp; deployment</li>
+                        <li><i class="fa-solid fa-check"></i> Monitoring &amp; backups</li>
+                        <li><i class="fa-solid fa-check"></i> Scaling &amp; security</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         PORTFOLIO
+         ============================================================ -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-sub">A selection of recent work I'm proud of.</p>
+            </div>
+
+            <div class="portfolio-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App / Systems</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <article class="project-card reveal" data-category="app">
+                    <div class="project-image">
+                        <img src="assets/project-bingo-bot.jpg" alt="Bingo Bot Platform" onerror="this.style.display='none';">
+                        <div class="project-overlay">
+                            <a href="#" class="project-icon" aria-label="Live demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="#" class="project-icon" aria-label="Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Telegram Bot</span>
+                        <h3>Bingo Bot Platform</h3>
+                        <p>Multiplayer Telegram bingo bot with ETB wallet, payment integration, and admin approval workflows.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span><span>Telegraf</span><span>PostgreSQL</span><span>ETB Wallet API</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card reveal" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/project-banking-db.jpg" alt="Banking System Database" onerror="this.style.display='none';">
+                        <div class="project-overlay">
+                            <a href="#" class="project-icon" aria-label="Live demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="#" class="project-icon" aria-label="Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Database</span>
+                        <h3>Banking System Database</h3>
+                        <p>PostgreSQL banking schema with stored procedures, triggers, views, and JSONB audit logging.</p>
+                        <div class="project-tech">
+                            <span>PostgreSQL</span><span>PL/pgSQL</span><span>Triggers</span><span>JSONB</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card reveal" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/project-ecommerce-search.jpg" alt="E-Commerce Search Engine" onerror="this.style.display='none';">
+                        <div class="project-overlay">
+                            <a href="#" class="project-icon" aria-label="Live demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="#" class="project-icon" aria-label="Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web App</span>
+                        <h3>E-Commerce Search Engine</h3>
+                        <p>High-performance search and recommendation module using Trie, Segment Tree, and TF-IDF.</p>
+                        <div class="project-tech">
+                            <span>Python</span><span>Trie</span><span>Segment Tree</span><span>TF-IDF</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card reveal" data-category="design">
+                    <div class="project-image">
+                        <img src="assets/project-ktdev.jpg" alt="Engineering Portfolio Site" onerror="this.style.display='none';">
+                        <div class="project-overlay">
+                            <a href="#" class="project-icon" aria-label="Live demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="#" class="project-icon" aria-label="Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web App</span>
+                        <h3>Engineering Portfolio Site</h3>
+                        <p>Dark navy/gold portfolio with blueprint motifs and a live contact form integration.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>EmailJS</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card reveal" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/project-bingo-web.jpg" alt="Bingo Web App" onerror="this.style.display='none';">
+                        <div class="project-overlay">
+                            <a href="#" class="project-icon" aria-label="Live demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="#" class="project-icon" aria-label="Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web App</span>
+                        <h3>Bingo Web App</h3>
+                        <p>Dependency-free, single-file browser companion app for a Telegram bingo game.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Telegram Web App API</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card reveal" data-category="app">
+                    <div class="project-image">
+                        <img src="assets/project-os-sync.jpg" alt="OS Synchronization Toolkit" onerror="this.style.display='none';">
+                        <div class="project-overlay">
+                            <a href="#" class="project-icon" aria-label="Live demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="#" class="project-icon" aria-label="Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Systems</span>
+                        <h3>OS Synchronization Toolkit</h3>
+                        <p>C/C++ implementations of shell interfaces, address translation, and load balancing.</p>
+                        <div class="project-tech">
+                            <span>C/C++</span><span>POSIX</span><span>Socket</span><span>Linux</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 7 -->
+                <article class="project-card reveal" data-category="app">
+                    <div class="project-image">
+                        <img src="assets/project-route-optimizer.jpg" alt="Last-Mile Logistics Optimizer" onerror="this.style.display='none';">
+                        <div class="project-overlay">
+                            <a href="#" class="project-icon" aria-label="Live demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="#" class="project-icon" aria-label="Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Algorithms</span>
+                        <h3>Last-Mile Logistics Optimizer</h3>
+                        <p>Route optimization tool combining stack, queue, and linked-list data structures.</p>
+                        <div class="project-tech">
+                            <span>Python</span><span>C++</span><span>Dijkstra</span><span>Priority Queue</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 8 -->
+                <article class="project-card reveal" data-category="app">
+                    <div class="project-image">
+                        <img src="assets/project-telegram-coins.jpg" alt="Telegram Mini App Coins" onerror="this.style.display='none';">
+                        <div class="project-overlay">
+                            <a href="#" class="project-icon" aria-label="Live demo"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="#" class="project-icon" aria-label="Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web App</span>
+                        <h3>Telegram Mini App Coins</h3>
+                        <p>React-based mini app with virtual coin economy and multiplayer game rooms.</p>
+                        <div class="project-tech">
+                            <span>React</span><span>TypeScript</span><span>Telegram Mini App</span><span>MongoDB</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         EXPERIENCE / TIMELINE
+         ============================================================ -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">My Journey So Far</h2>
+                <p class="section-sub">A timeline of where I've worked and what I've learned.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass">
+                        <span class="timeline-date">2026 — Present</span>
+                        <h3>Founder & Lead Engineer</h3>
+                        <h4>Nexora Tech</h4>
+                        <p>Founded a product studio delivering full-stack web applications and design systems for clients worldwide.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass">
+                        <span class="timeline-date">2025 — 2026</span>
+                        <h3>Senior Full Stack Developer</h3>
+                        <h4>Freelance / Contract</h4>
+                        <p>Built SaaS dashboards, e-commerce platforms and custom CMS solutions for 10+ clients in my country.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass">
+                        <span class="timeline-date">2024 — 2025</span>
+                        <h3>Full Stack Developer</h3>
+                        <h4>Brightlab </h4>
+                        <p>Developed and maintained 5+ client projects using Laravel, React and MySQL. Mentored junior developers.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass">
+                        <span class="timeline-date">2024</span>
+                        <h3>Junior Web Developer</h3>
+                        <h4>super simple dev</h4>
+                        <p>Started my career building WordPress sites and learning PHP, JavaScript and database design fundamentals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         STATS / COUNTERS
+         ============================================================ -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <div class="stat-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div>
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Gifts from my client</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                    <div class="stat-number" data-target="1050">0</div>
+                    <div class="stat-label">Cups of Coffee</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         TESTIMONIALS
+         ============================================================ -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-sub">Real words from real people I've worked with.</p>
+            </div>
+
+            <div class="testimonials-slider reveal">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card glass">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Kflay delivered a flawless dashboard ahead of schedule. His attention to detail and communication are world-class."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">S</div>
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <span>ful stack developer (hindia)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Working with Kflay felt like working with a senior partner. He turned our rough idea into a polished product."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">M</div>
+                            <div>
+                                <h4>samuel tesfay</h4>
+                                <span>project engineer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"The bingo bot he built for us doubled our conversions in 5 days. Highly recommended."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">A</div>
+                            <div>
+                                <h4>Amir Yusuf</h4>
+                                <span> africa bingo </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Clean code, beautiful design and rock-solid communication. Exactly what every founder hopes for."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">D</div>
+                            <div>
+                                <h4>David Park</h4>
+                                <span>manager </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-dots" id="testimonialsDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         PRICING
+         ============================================================ -->
+    <section id="pricing" class="section pricing">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">Simple &amp; Transparent Pricing</h2>
+                <p class="section-sub">Pick the plan that fits your project.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card glass reveal">
+                    <div class="pricing-name">Starter</div>
+                    <div class="pricing-price"><span class="currency">$</span><span class="amount">199</span></div>
+                    <div class="pricing-desc">Perfect for landing pages &amp; small sites.</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> 1 page website</li>
+                        <li><i class="fa-solid fa-check"></i> Responsive design</li>
+                        <li><i class="fa-solid fa-check"></i> Contact form</li>
+                        <li><i class="fa-solid fa-check"></i> SEO basics</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> Custom backend</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> Admin panel</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Choose Starter</a>
+                </div>
+
+                <div class="pricing-card glass featured reveal">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-name">Professional</div>
+                    <div class="pricing-price"><span class="currency">$</span><span class="amount">499</span></div>
+                    <div class="pricing-desc">For growing businesses &amp; startups.</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Up to 8 pages</li>
+                        <li><i class="fa-solid fa-check"></i> Custom UI/UX design</li>
+                        <li><i class="fa-solid fa-check"></i> CMS integration</li>
+                        <li><i class="fa-solid fa-check"></i> Admin panel</li>
+                        <li><i class="fa-solid fa-check"></i> SEO optimization</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> E-commerce features</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Choose Professional</a>
+                </div>
+
+                <div class="pricing-card glass reveal">
+                    <div class="pricing-name">Enterprise</div>
+                    <div class="pricing-price"><span class="currency">$</span><span class="amount">custom</span></div>
+                    <div class="pricing-desc">Full-scale web apps &amp; platforms.</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Unlimited pages</li>
+                        <li><i class="fa-solid fa-check"></i> Custom web application</li>
+                        <li><i class="fa-solid fa-check"></i> E-commerce ready</li>
+                        <li><i class="fa-solid fa-check"></i> Advanced admin panel</li>
+                        <li><i class="fa-solid fa-check"></i> Performance &amp; SEO</li>
+                        <li><i class="fa-solid fa-check"></i> Priority support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Choose Enterprise</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ
+         ============================================================ -->
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-sub">Got questions? I've got answers.</p>
+            </div>
+
+            <div class="faq-list reveal">
+                <div class="faq-item glass">
+                    <button class="faq-question">
+                        <span>How long does a typical project take?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most projects take between 1 and 5 weeks depending on scope. A simple landing page can be done in a week; a full web app usually takes 2–5 weeks.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <button class="faq-question">
+                        <span>Do you provide ongoing support?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. I offer monthly maintenance and support packages so your site stays fast, secure and up to date.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <button class="faq-question">
+                        <span>Which technologies do you work with?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I work with HTML5, CSS3, JavaScript, React, Vue, PHP, Laravel, Node.js, MySQL, PostgreSQL, Figma and many more modern tools.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <button class="faq-question">
+                        <span>Can you work with my existing team?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. I'm comfortable embedding with in-house teams or working alongside other agencies.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <button class="faq-question">
+                        <span>Do you build mobile apps?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes — I build cross-platform apps with React Native and Flutter that run on iOS and Android from a single codebase.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <button class="faq-question">
+                        <span>How do payments work?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I usually work with a 30% upfront, 40% mid-project and 30% on delivery split. For larger projects we can do milestones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Let's Build Something Great</h2>
+                <p class="section-sub">Have a project in mind? Send me a message and I'll get back within 24 hours.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Get in Touch</h3>
+                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <span>Email</span>
+                            <a href="mailto:tesfaykflay75@gmail.com">tesfaykflay75@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <span>Phone</span>
+                            <a href="tel:+251939589512">0939589512</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <span>Location</span>
+                            <span>Ethiopia</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://instagram.com/nexora.tech19"  target="_blank" rel="noopener" aria-label="Instagram" class="social-link brand-instagram"><img src="assets/icons/social/instagram.png" alt="Instagram" loading="lazy"></a>
+                    <a href="https://tiktok.com/@nexora.tech17"   target="_blank" rel="noopener" aria-label="TikTok"   class="social-link brand-tiktok"><img src="assets/icons/social/tiktok.png" alt="TikTok" loading="lazy"></a>
+                    <a href="https://wa.me/251939589512"          target="_blank" rel="noopener" aria-label="WhatsApp" class="social-link brand-whatsapp"><img src="assets/icons/social/whatsapp.png" alt="WhatsApp" loading="lazy"></a>
+                    <a href="https://linkedin.com/in/kflay tesfay" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link brand-linkedin"><img src="assets/icons/social/linkedin.png" alt="LinkedIn" loading="lazy"></a>
+                    <a href="https://facebook.com/Nexora Tech19" target="_blank" rel="noopener" aria-label="Facebook" class="social-link brand-facebook"><img src="assets/icons/social/facebook.png" alt="Facebook" loading="lazy"></a>
+                    <a href="https://t.me/nexoratech19"           target="_blank" rel="noopener" aria-label="Telegram" class="social-link brand-telegram"><img src="assets/icons/social/telegram.png" alt="Telegram" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <form class="contact-form glass reveal" id="contactForm" novalidate>
+                    <h3>Send a Message</h3>
+
+                    <!-- FormSubmit config: emails submissions straight to your inbox, no backend needed -->
+                    <input type="hidden" name="_subject" value="New message from your portfolio site">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_honey" style="display:none">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+251 ...">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What's it about?">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                        <span class="btn-text">Send Message</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-mark">N</span><span class="logo-text">exora<span class="logo-dot">.</span></span>
+                    </a>
+                    <p>Crafting premium digital experiences with clean code and beautiful design. Turning ideas into powerful products.</p>
+                    <div class="footer-socials">
+                    <a href="https://instagram.com/nexora.tech19"  target="_blank" rel="noopener" aria-label="Instagram" class="social-link brand-instagram"><img src="assets/icons/social/instagram.png" alt="Instagram" loading="lazy"></a>
+                    <a href="https://tiktok.com/@nexora.tech17"   target="_blank" rel="noopener" aria-label="TikTok"   class="social-link brand-tiktok"><img src="assets/icons/social/tiktok.png" alt="TikTok" loading="lazy"></a>
+                    <a href="https://wa.me/251939589512"          target="_blank" rel="noopener" aria-label="WhatsApp" class="social-link brand-whatsapp"><img src="assets/icons/social/whatsapp.png" alt="WhatsApp" loading="lazy"></a>
+                    <a href="https://linkedin.com/in/kflay tesfay" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link brand-linkedin"><img src="assets/icons/social/linkedin.png" alt="LinkedIn" loading="lazy"></a>
+                    <a href="https://facebook.com/Nexora Tech19" target="_blank" rel="noopener" aria-label="Facebook" class="social-link brand-facebook"><img src="assets/icons/social/facebook.png" alt="Facebook" loading="lazy"></a>
+                    <a href="https://t.me/nexoratech19"           target="_blank" rel="noopener" aria-label="Telegram" class="social-link brand-telegram"><img src="assets/icons/social/telegram.png" alt="Telegram" loading="lazy"></a>
+                </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">E-Commerce Apps</a></li>
+                        <li><a href="#services">Company Websites</a></li>
+                        <li><a href="#services">Management Systems</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:tesfaykflay75@gmail.com">tesfaykflay75@gmail.com</a></li>
+                        <li><i class="fa-solid fa-phone"></i> <a href="tel:+251939589512">0939589512</a></li>
+                        <li><i class="fa-solid fa-location-dot"></i> Ethiopia</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> Kflay Tesfay — Nexora Tech. All rights reserved.</p>
+                <p>Built with <i class="fa-solid fa-heart" style="color:#ef4444;"></i> in Ethiopia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
